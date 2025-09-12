@@ -19,8 +19,8 @@ export const somniaMainnet: Chain = {
     symbol: 'STT',
   },
   rpcUrls: {
-    public: { http: ['http://dream-rpc.somnia.network/'] },
-    default: { http: ['http://dream-rpc.somnia.network/'] },
+    public: { http: ['https://dream-rpc.somnia.network/'] },
+    default: { http: ['https://dream-rpc.somnia.network/'] },
   },
   blockExplorers: {
     default: { name: 'Somnia Explorer', url: 'https://explorer.somnia.network' },
@@ -37,8 +37,8 @@ export const somniaTestnet: Chain = {
     symbol: 'STT',
   },
   rpcUrls: {
-    public: { http: ['http://dream-rpc.somnia.network/'] },
-    default: { http: ['http://dream-rpc.somnia.network/'] },
+    public: { http: ['https://dream-rpc.somnia.network/'] },
+    default: { http: ['https://dream-rpc.somnia.network/'] },
   },
   blockExplorers: {
     default: { name: 'Somnia Testnet Explorer', url: 'https://testnet-explorer.somnia.network' },
