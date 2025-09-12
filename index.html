@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOMIAGOV - Advanced Governance Platform</title>
+    <meta name="description" content="Sophisticated blockchain governance platform with advanced voting, reputation system, and NFT badges on Somnia Network" />
+    
+    <!-- Web3Modal patch for null error -->
+    <script>
+      // Patch for Web3Modal null error before it loads
+      window.addEventListener('DOMContentLoaded', () => {
+        // Create safe navigator properties if they don't exist
+        if (!navigator.userAgent) {
+          Object.defineProperty(navigator, 'userAgent', {
+            value: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+            writable: false
+          });
+        }
+        
+        // Ensure ethereum property exists
+        if (!window.ethereum) {
+          window.ethereum = null;
+        }
+        
+        // Patch potential null checks
+        const originalFilter = Array.prototype.filter;
+        Array.prototype.filter = function(callback, thisArg) {
+          try {
+            return originalFilter.call(this || [], callback, thisArg);
+          } catch (error) {
+            console.warn('Array filter patched:', error);
+            return [];
+          }
+        };
+      });
+    </script>
+  </head>
+  <body class="bg-dark-900 text-white min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
