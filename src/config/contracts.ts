@@ -2,12 +2,12 @@
 import { Chain } from 'wagmi';
 
 import GovernanceABI from './Governance.abi.json'
-import GovernanceTokenABI from '../../artifacts/contracts/GovernanceToken.sol/GovernanceToken.json'
-import ReputationNFTABI from '../../artifacts/contracts/ReputationNFT.sol/ReputationNFT.json'
+import GovernanceTokenABI from './GovernanceToken.abi.json'
+import ReputationNFTABI from './ReputationNFT.abi.json'
 
 const GovernanceABI_Contracts = GovernanceABI;
-const TokenABI = GovernanceTokenABI.abi;
-const ReputationABI_Contracts = ReputationNFTABI.abi;
+const TokenABI = GovernanceTokenABI;
+const ReputationABI_Contracts = ReputationNFTABI;
 
 export const somniaMainnet: Chain = {
   id: 2019,
