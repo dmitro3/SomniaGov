@@ -163,7 +163,7 @@ export default function ProposalCard({
         <div className="flex justify-between items-center text-sm">
           <span className="text-gray-400">Voting Progress</span>
           <span className="text-white font-medium">
-            {proposal.totalVotes.toLocaleString()} / {proposal.quorum.toLocaleString()} SGOV
+            {proposal.totalVotes.toLocaleString()}
           </span>
         </div>
         
@@ -179,7 +179,7 @@ export default function ProposalCard({
             <TrendingUp className="h-4 w-4 text-success-400" />
             <span className="text-sm text-gray-400">For:</span>
             <span className="text-sm font-medium text-success-400">
-              {proposal.forVotes.toLocaleString()} SGOV
+              {proposal.forVotes.toLocaleString()}
             </span>
           </div>
           
@@ -187,7 +187,7 @@ export default function ProposalCard({
             <TrendingDown className="h-4 w-4 text-danger-400" />
             <span className="text-sm text-gray-400">Against:</span>
             <span className="text-sm font-medium text-danger-400">
-              {proposal.againstVotes.toLocaleString()} SGOV
+              {proposal.againstVotes.toLocaleString()}
             </span>
           </div>
         </div>
