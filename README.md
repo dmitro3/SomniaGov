@@ -65,6 +65,11 @@ npm install
 cp .env.example .env
 # Edit .env with your configuration
 
+### currently used contracts
+ VITE_GOVERNANCE_CONTRACT_TESTNET=0x48cF4d8046Ecf8886170f7C7caC83E20A9f76713
+VITE_GOVERNANCE_TOKEN_TESTNET=0xe6b04A75D5F2dccF1c77AE4E7C2a70B427eBa229
+VITE_REPUTATION_NFT_TESTNET=0x67cF61d48dfa086D215fB2078e31441Bc3128a72
+
 # Compile smart contracts
 npm run compile
 
